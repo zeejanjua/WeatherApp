@@ -16,6 +16,6 @@ extension BaseViewModelDelegate {
     func showSuccessAlert(message: String) {}
 }
 
-public class BaseViewModel {
+public class BaseViewModel: NSObject {
     weak var baseDelegate: BaseViewModelDelegate?
 }

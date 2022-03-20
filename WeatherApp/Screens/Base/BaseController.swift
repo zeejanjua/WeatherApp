@@ -16,8 +16,7 @@ class BaseController: UIViewController {
         
         //* Make default settings for nav bar *//
         navigationItem.setHidesBackButton(true, animated: false)
-        navigationController?.navigationBar.isHidden = false
-        navigationController?.navigationBar.tintColor = UIColor.black
+        navigationController?.navigationBar.isHidden = true
     }
     
     override func viewDidLoad() {
