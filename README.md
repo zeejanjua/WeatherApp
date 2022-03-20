@@ -1,6 +1,6 @@
 # iOS WeatherApp
 
-This project contains the API and UI implementation of Weather. APIs documentation is here [Document Link][url1]
+This project contains the OpenWeather API and UI implementation of Weather. APIs documentation is here [Document Link][url1]
 
 ##  Requirements
 
@@ -22,7 +22,7 @@ This project contains the API and UI implementation of Weather. APIs documentati
 
 ## Architecture
 
-```MVVM``` (Model View ViewModel) approach is used in development of this projec
+```MVVM``` (Model View ViewModel) approach is used in development of this project
 
 ## Compatibility
  
