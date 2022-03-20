@@ -27,6 +27,7 @@
 		218EE39F27E6F097003E17DE /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EE39E27E6F097003E17DE /* WeatherDataModel.swift */; };
 		218EE3A227E71824003E17DE /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EE3A127E71824003E17DE /* DailyTableViewCell.swift */; };
 		218EE3A927E7531B003E17DE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EE3A827E7531B003E17DE /* LocationManager.swift */; };
+		218EE3AB27E771E9003E17DE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218EE3AA27E771E9003E17DE /* Extensions.swift */; };
 		509757092522CF3B00AEF5EB /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79FBC079817987352F186C1 /* Pods_WeatherAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		218EE39E27E6F097003E17DE /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		218EE3A127E71824003E17DE /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
 		218EE3A827E7531B003E17DE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		218EE3AA27E771E9003E17DE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		342A297072C7459A4CEBCD81 /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7181362C41AE236BC7CF5243 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		B79FBC079817987352F186C1 /* Pods_WeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +138,6 @@
 				218EE3A727E75301003E17DE /* Managers */,
 				218EE37F27E6E438003E17DE /* Constants */,
 				218EE39027E6EF5B003E17DE /* Utils */,
-				218EE38427E6E5DF003E17DE /* Network */,
 				218EE38327E6E56F003E17DE /* Models */,
 				218EE38527E6E657003E17DE /* Screens */,
 				218EE38227E6E4D7003E17DE /* Supporting FIles */,
@@ -179,13 +180,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		218EE38427E6E5DF003E17DE /* Network */ = {
+		218EE38427E6E5DF003E17DE /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
 				218EE38A27E6ED44003E17DE /* Base */,
 				218EE38927E6ED44003E17DE /* WeatherAPIHandler.swift */,
 			);
-			path = Network;
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		218EE38527E6E657003E17DE /* Screens */ = {
@@ -221,6 +222,7 @@
 			children = (
 				218EE39327E6EF5B003E17DE /* Utility.swift */,
 				218EE39127E6EF5B003E17DE /* NetworkStatus.swift */,
+				218EE3AA27E771E9003E17DE /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -246,6 +248,7 @@
 		218EE3A727E75301003E17DE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				218EE38427E6E5DF003E17DE /* NetworkManager */,
 				218EE3A827E7531B003E17DE /* LocationManager.swift */,
 			);
 			path = Managers;
@@ -479,6 +482,7 @@
 				218EE35027E4E9ED003E17DE /* AppDelegate.swift in Sources */,
 				218EE39C27E6F01F003E17DE /* BaseViewModel.swift in Sources */,
 				218EE35227E4E9ED003E17DE /* SceneDelegate.swift in Sources */,
+				218EE3AB27E771E9003E17DE /* Extensions.swift in Sources */,
 				218EE38D27E6ED44003E17DE /* WeatherAPIHandler.swift in Sources */,
 				218EE38E27E6ED44003E17DE /* APIManagerBase.swift in Sources */,
 				218EE38127E6E461003E17DE /* Constants.swift in Sources */,

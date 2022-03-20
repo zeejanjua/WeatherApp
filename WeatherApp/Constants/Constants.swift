@@ -17,9 +17,6 @@ struct Constants {
     
     /** BASE URL */
     static let baseURL = "https://api.openweathermap.org/data/2.5/"
-    
-    static let imageBaseURL = "http://openweathermap.org/img/wn/"
-    
 }
 
 
@@ -29,7 +26,7 @@ enum Strings: String {
     
     //MARK: - Error Messages
     
-    case noRecords = "Sorry!, we couldn't find any movie"
+    case noRecords = "Sorry!, we couldn't find any weather data"
     case noNetwork = "no_network"
     case timeOut = "time_out"
     case errorOccured = "error_occured"
@@ -37,30 +34,5 @@ enum Strings: String {
     
     var localized: String {
         return NSLocalizedString(self.rawValue, comment: self.rawValue)
-    }
-}
-
-
-struct ErrorMessage {
-    private init() {}
-    
-    static let network = NeworkAlerts()
-}
-
-
-struct NeworkAlerts {
-    fileprivate init() {}
-    
-    var noNetwork: String {
-        return Strings.noNetwork.localized
-    }
-    var timeOut: String {
-        return Strings.timeOut.localized
-    }
-    var errorOccured: String {
-        return Strings.errorOccured.localized
-    }
-    var badRequest: String {
-        return Strings.badRequest.localized
     }
 }

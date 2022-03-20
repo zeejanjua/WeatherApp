@@ -52,7 +52,7 @@ class NetworkStatus: NSObject {
         case .wifi:
             print("Reachable via WiFi")
             if statusBanner.isDisplaying {
-            statusBanner.dismiss()
+                statusBanner.dismiss()
             }
             break
         case .cellular:

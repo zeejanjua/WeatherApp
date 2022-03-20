@@ -3,11 +3,6 @@ import UIKit
 
 class BaseController: UIViewController {
     
-    //MARK: - Properties
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
-    }
-    
     //MARK: - ViewController Methods
     override func loadView() {
         super.loadView()
@@ -15,7 +10,6 @@ class BaseController: UIViewController {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         
         //* Make default settings for nav bar *//
-        navigationItem.setHidesBackButton(true, animated: false)
         navigationController?.navigationBar.isHidden = true
     }
     
@@ -26,8 +20,6 @@ class BaseController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //* Update status bar style *//
-        self.setNeedsStatusBarAppearanceUpdate()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
