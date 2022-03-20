@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather-Splash" translatesAutoresizingMaskIntoConstraints="NO" id="gaf-mY-Swy">
-                                <rect key="frame" x="79" y="357.5" width="256" height="181"/>
+                                <rect key="frame" x="79" y="307.5" width="256" height="181"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.661237454" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gaf-mY-Swy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2LU-gx-yT4"/>
+                            <constraint firstItem="gaf-mY-Swy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-50" id="2LU-gx-yT4"/>
                             <constraint firstItem="gaf-mY-Swy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sK4-Ou-NQp"/>
                         </constraints>
                     </view>
@@ -36,8 +35,5 @@
     </scenes>
     <resources>
         <image name="Weather-Splash" width="256" height="181"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
